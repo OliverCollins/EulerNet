@@ -1,1 +1,19 @@
 //Largest prime factor
+//Unsolved
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int prime = 3;
+	int divisible = 2;
+	int count = 0;
+	while (prime > divisible) {
+	    while (prime % divisible != 0)
+	        divisible = count;
+	    } count++;
+	}
+	cout << divisible;
+	return 0;
+}
