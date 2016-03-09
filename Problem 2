@@ -1,2 +1,17 @@
 #Sum of even fibonacci numbers
 //Unsolved
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    int fibonacci = 1;
+    int next, counter;
+    while ((fibonacci) < 4000000) {
+        if (fibonacci % 2 == 0) {
+            counter = counter + fibonacci;
+        }
+        next = fibonacci;
+        fibonacci = fibonacci + next;
+    } cout << counter;
+}
