@@ -1,5 +1,5 @@
 //Sum of multiples of 3
-//Unsolved
+//Solved
 
 #include <iostream>
 using namespace std;
@@ -8,14 +8,23 @@ int main () {
     int number;
     int three = 3;
     int five = 5;
-    int counter = 0;
     cout << "Number: ";
     cin >> number;
+    int counter = 0;
     while (number > three) {
-        counter = counter + three;
-        three = three + 3;
+        if (three % 5 == 0) {
+            counter = counter + three;
+            three = three + 3;
+        } else {
+            counter = counter + three;
+            three = three + 3;
+        }
     } while (number > five) {
-        counter = counter + five;
-        five = five + 5;
+        if (five % 3 == 0) {
+            five = five + 5;
+        } else {
+            counter = counter + five;
+            five = five + 5;
+        }
     } cout << counter;
 }
