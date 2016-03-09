@@ -1,1 +1,21 @@
 //Sum of multiples of 3
+//Unsolved
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    int number;
+    int three = 3;
+    int five = 5;
+    int counter = 0;
+    cout << "Number: ";
+    cin >> number;
+    while (number > three) {
+        counter = counter + three;
+        three = three + 3;
+    } while (number > five) {
+        counter = counter + five;
+        five = five + 5;
+    } cout << counter;
+}
