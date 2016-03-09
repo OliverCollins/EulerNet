@@ -1,17 +1,34 @@
 #Sum of even fibonacci numbers
-//Unsolved
+//Solved
 
 #include <iostream>
 using namespace std;
 
-int main () {
-    int fibonacci = 1;
-    int next, counter;
-    while ((fibonacci) < 4000000) {
-        if (fibonacci % 2 == 0) {
-            counter = counter + fibonacci;
+int fibonacci(int nth_term) {
+    if (nth_term == 1) {
+        return nth_term;
+    } else {
+        int add = 0;
+        int counter = 1;
+        int current = 1;
+        int prev = 1;
+        int next = 1;
+        while (counter != nth_term && current < 4000000) {
+            next = current + prev;
+            counter++;
+            prev = next - prev;
+            current = next;
+            if (current % 2 == 0) {
+                add = add + current;
+            }
         }
-        next = fibonacci;
-        fibonacci = fibonacci + next;
-    } cout << counter;
+        return add;
+    }
+}
+
+int main () {
+    int number;
+    cout << "Number: ";
+    cin >> number;
+    cout << fibonacci(number);
 }
