@@ -2,27 +2,46 @@
 //Unsolved
 
 #include <iostream>
-
-#include <iostream>
 using namespace std;
 
 int prime(int number) {
     int prime = 2;
-    bool boo = true;
-    while (boo) {
-        if (number % prime == 0) {
-            boo = false;
-            return number;
+    int x = 2;
+    bool boo = false;
+    if (number == 2) {
+        boo = true;
+        return boo;
+    }
+    while ((number % x != 0) && (number > x) && !boo) {
+        if ((number - 1) == x) {
+            cout << number << " is prime" << endl;
+            boo = true;
+            return boo;
+        } else {
+            x++;
         }
     }
 }
 
 int main () {
     int number;
+    int x = 2;
+    int divide = 2;
     cout << "Number: ";
     cin >> number;
-    while (number != prime(number)) {
-        cout << prime(number) << endl;
-    }
+    bool flag = false;
+    bool boo = false;
+    while (number != divide) {
+        while (prime(divide) && !flag) {
+            if (number % divide == 0) {
+                number = number / divide;
+                cout << divide << endl;
+                divide++;
+                flag = true;
+            } else {
+                divide++;
+            }
+        } divide++;
+    } cout << number;
     return 0;
 }
