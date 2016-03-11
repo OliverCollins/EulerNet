@@ -14,34 +14,31 @@ int prime(int number) {
     }
     while ((number % x != 0) && (number > x) && !boo) {
         if ((number - 1) == x) {
-            cout << number << " is prime" << endl;
+            //cout << number << " is prime" << endl;
             boo = true;
-            return boo;
         } else {
             x++;
         }
-    }
+    } return boo;
 }
 
 int main () {
     int number;
-    int x = 2;
-    int divide = 2;
+    int prime_num = 2;
     cout << "Number: ";
     cin >> number;
-    bool flag = false;
-    bool boo = false;
-    while (number != divide) {
-        while (prime(divide) && !flag) {
-            if (number % divide == 0) {
-                number = number / divide;
-                cout << divide << endl;
-                divide++;
-                flag = true;
+    while (number > 1) {
+        if (prime(prime_num)) {
+            if (number % prime_num == 0) {
+                number = number / prime_num;
+                cout << prime_num << endl;
+                prime_num++;
             } else {
-                divide++;
-            }
-        } divide++;
-    } cout << number;
+                prime_num++;
+            } //N: 5  P: 3
+        } else {
+            prime_num++;
+        }
+    }
     return 0;
 }
