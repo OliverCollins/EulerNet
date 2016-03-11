@@ -1,2 +1,38 @@
 //Largest Palidrone product
 //Unsolved
+
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+template <typename T>
+string NumberToString(T pNumber) {
+    ostringstream oOStrStream;
+    oOStrStream << pNumber;
+    return oOStrStream.str();
+}
+
+int main () {
+    string number;
+    cout << "Choose a number: ";
+    cin >> number;
+    int number1 = 1;
+    int number2 = 1;
+    int number3;
+    //string str1 = number.substr(0,3);
+    //string str2 = number.substr(3,6);
+    while (number1 * number2 < 1000000) {
+        number3 = number1 * number2;
+        number = NumberToString(number3);
+        string str1 = number.substr(0,3);
+        string str2 = number.substr(3,6);
+        if (str1 == str2) {
+            cout << number1 << endl;
+            cout << number2 << endl;
+        }
+    }
+    cout << "Hello World!" << endl;
+    return 0;
+}
