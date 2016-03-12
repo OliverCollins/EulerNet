@@ -2,43 +2,40 @@
 //Unsolved
 
 #include <iostream>
+#include <string>
+#include <sstream>
+
 using namespace std;
 
+
 int prime(int number) {
+    int asd;
     int prime = 2;
     int x = 2;
     bool boo = false;
+    int prime_counter = 0;
     if (number == 2) {
         boo = true;
         return boo;
     }
-    while ((number % x != 0) && (number > x) && !boo) {
-        if ((number - 1) == x) {
-            //cout << number << " is prime" << endl;
-            boo = true;
-        } else {
-            x++;
+    while (number != prime_counter) {
+        while ((number % x != 0) && (number > x) && !boo) {
+            if ((number - 1) == x) {
+                cout << number << " is prime" << endl;
+                boo = true;
+                prime_counter++;
+                asd = number;
+            } else {
+                x++;
+            }
         }
-    } return boo;
+    } return asd;
 }
 
 int main () {
     int number;
-    int prime_num = 2;
-    cout << "Number: ";
+    cout << "l: ";
     cin >> number;
-    while (number > 1) {
-        if (prime(prime_num)) {
-            if (number % prime_num == 0) {
-                number = number / prime_num;
-                cout << prime_num << endl;
-                prime_num++;
-            } else {
-                prime_num++;
-            } //N: 5  P: 3
-        } else {
-            prime_num++;
-        }
-    }
+    cout << prime(number);
     return 0;
 }
