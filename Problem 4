@@ -12,8 +12,6 @@ int main () {
     int number1 = 1;
     int number2 = 1;
     int number3;
-    //string str1 = number.substr(0,3);
-    //string str2 = number.substr(3,6);
     while (number1 * number2 < 1000000) {
         number3 = number1 * number2;
         number = to_string(number3);
