@@ -1,2 +1,42 @@
 //Large Prime Numbers
 //Unsolved
+
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+
+int prime(int number) {
+    int asd = 2;
+    int prime = 2;
+    int x = 2;
+    bool boo = false;
+    int prime_counter = 0;
+    if (asd == 2) {
+        boo = true;
+        return boo;
+    }
+    while (number != prime_counter) {
+        while ((asd % x != 0) && (asd > x) && !boo) {
+            if ((asd - 1) == x) {
+                cout << number << " is prime" << endl;
+                boo = true;
+                prime_counter++;
+                asd++;
+            } else {
+                x++;
+                prime_counter++;
+            }
+        }
+    } return asd;
+}
+
+int main () {
+    int number;
+    cout << "l: ";
+    cin >> number;
+    cout << prime(number);
+    return 0;
+}
