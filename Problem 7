@@ -9,33 +9,29 @@ using namespace std;
 
 
 int prime(int number) {
-    int asd = 2;
-    int prime = 2;
-    int x = 2;
-    bool boo = false;
-    int prime_counter = 0;
-    if (asd == 2) {
-        boo = true;
-        return boo;
-    }
-    while (number != prime_counter) {
-        while ((asd % x != 0) && (asd > x) && !boo) {
-            if ((asd - 1) == x) {
-                cout << number << " is prime" << endl;
-                boo = true;
-                prime_counter++;
-                asd++;
+    int counter = 1;
+    int prime = 3;
+    int div = 2;
+    while (number != counter) {
+        while ((prime % div != 0) && (prime > div)) {
+            if ((prime - 1) == div) {
+                counter++;
+                prime++;
+                div = 2;
             } else {
-                x++;
-                prime_counter++;
+                div++;
             }
-        }
-    } return asd;
+        } prime++;
+    } return prime;;
 }
+
+
+
+
 
 int main () {
     int number;
-    cout << "l: ";
+    cout << "Select the nth prime number: ";
     cin >> number;
     cout << prime(number);
     return 0;
