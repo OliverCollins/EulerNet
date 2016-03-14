@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 int prime(int number) {
     int counter = 1;
     int prime = 3;
@@ -24,10 +23,6 @@ int prime(int number) {
         } prime++;
     } return prime;;
 }
-
-
-
-
 
 int main () {
     int number;
