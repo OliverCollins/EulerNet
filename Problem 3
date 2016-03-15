@@ -10,8 +10,7 @@ using namespace std;
 
 int prime(int number) {
     int asd;
-    int prime = 2;
-    int x = 2;
+    int prime, x = 2;
     bool boo = false;
     int prime_counter = 0;
     if (number == 2) {
