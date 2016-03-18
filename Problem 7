@@ -19,6 +19,7 @@ int prime(int number) {
                 div = 2;
             } else {
                 div++;
+                cout << div;
             }
         } prime++;
     } return prime;;
