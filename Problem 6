@@ -9,14 +9,11 @@
 //Solved
 
 #include <iostream>
-#include <string>
-#include <sstream>
 
 using namespace std;
 
-int prime(int number) {
-    int sum_squares = 0;
-    int natural = 0;
+int difference(int number) {
+    int sum_squares, natural = 0;
     for (int i = 1; i <= number; i++) {
         sum_squares = sum_squares + (i * i);
     }
@@ -33,8 +30,8 @@ int prime(int number) {
 
 int main () {
     int number;
-    cout << "Select the nth prime number: ";
+    cout << "Select natural number: ";
     cin >> number;
-    cout << prime(number);
+    cout << difference(number);
     return 0;
 }
