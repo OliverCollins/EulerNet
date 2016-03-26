@@ -8,32 +8,24 @@
 //Largest Palidrome Product
 //Unsolved
 
-#include <iostream>
-#include <string>
-#include <sstream>
-
-using namespace std;
-
-int main () {
-    string number;
-    int number1 = 1;
-    int number2 = 1;
-    int number3;
-    while (number1 * number2 < 1000000) {
-        number3 = number1 * number2;
-        number = to_string(number3);
-        string str1 = number.substr(0,3);
-        string str2 = number.substr(3,6);
-        if (str1 == str2) {
-            cout << number1 << endl;
-            cout << number2 << endl;
-            if (number1 > 500000) {
-                number2++;
-            } else {
-                number1++;
-            }
-        }
-    }
-    cout << "Hello World!" << endl;
-    return 0;
-}
+number1 = number2 = 317
+number3 = comp1 = comp2 = 0
+number = ""
+while (number1 * number2 < 998002):
+	number3 = number1 * number2;
+	number = str(number3)
+	str1 = number[0:3]
+	str2 = number[3:6]
+	str2 = str2[::-1]
+	comp1 = int(str1)
+	comp2 = int(str2)
+	if (comp1 == comp2):
+		print number1
+		print number2
+		number1 += 1
+		number2 += 1
+	else:
+		if (number1 > 998):
+			number2 += 1
+		else:
+			number1 += 1
