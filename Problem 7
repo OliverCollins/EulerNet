@@ -19,9 +19,9 @@ int prime(int number) {
                 div = 2;
             } else {
                 div++;
-                cout << div;
             }
         } prime++;
+        div = 2;
     } return prime;;
 }
 
