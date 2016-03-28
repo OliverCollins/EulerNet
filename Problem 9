@@ -6,6 +6,11 @@
 ----------------------------------
 /*
 
+//Pythagorean triplet
+//Unsolved
+
+
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -24,7 +29,3 @@ int main () {
     } cout << (a * b * c);
     
 }
-
-
-//Pythagorean triplet
-//Unsolved
