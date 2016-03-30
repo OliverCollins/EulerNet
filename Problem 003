@@ -16,33 +16,33 @@
 using namespace std;
 
 
-int prime(int number) {
-    int asd;
-    int prime, x = 2;
+int prime(int n) {
+    int x = 2;
     bool boo = false;
-    int prime_counter = 0;
-    if (number == 2) {
+    if (n == 2) {
         boo = true;
         return boo;
     }
-    while (number != prime_counter) {
-        while ((number % x != 0) && (number > x) && !boo) {
-            if ((number - 1) == x) {
-                cout << number << " is prime" << endl;
-                boo = true;
-                prime_counter++;
-                asd = number;
-            } else {
-                x++;
-            }
+    while (n % x != 0) {
+        ++x;
+        if ((n - 1) == x) {
+            boo = true;
         }
-    } return asd;
+    } return boo;
 }
 
 int main () {
-    int number;
-    cout << "l: ";
-    cin >> number;
-    cout << prime(number);
+    int n;
+    int p = 2;
+    cout << "Enter number: ";
+    cin >> n;
+    while (n > p) {
+        if (prime(p)) {
+            if (n % p == 0) {
+                n = n / p;
+                cout << p << endl;;
+            } ++p;
+        } ++p;
+    } cout << n;
     return 0;
 }
