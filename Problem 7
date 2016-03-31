@@ -40,3 +40,42 @@ int main () {
     cout << prime(number);
     return 0;
 }
+
+
+
+
+
+
+
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+
+int prime(int const n) {
+    int p_counter = 0;
+    int x, p = 2;
+    if (p == 2) {
+        ++p;
+        ++p_counter;
+    }
+    while (p_counter != n) {
+        while (p % x != 0) {
+            ++x;
+            if ((p - 1) == x) {
+                ++p_counter;
+                ++p;
+            }
+        } ++p;
+    } return p;
+}
+
+int main () {
+    int n;
+    cout << "Enter number: ";
+    cin >> n;
+    cout << prime(n) << endl;
+    return 0;
+}
