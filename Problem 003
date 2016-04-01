@@ -1,48 +1,36 @@
 //Programmer:    Oliver Collins
-//Date:          March 20th, 2016
-//Language:      C++
+//Date:          April 1st, 2016
+//Language:      Python
 
 */
 ----------------------------------
 /*
 
 //Largest prime factor
-//Unsolved
+//Solved
 
-#include <iostream>
-#include <string>
-#include <sstream>
-
-using namespace std;
-
-
-int prime(int n) {
-    int x = 2;
-    bool boo = false;
-    if (n == 2) {
-        boo = true;
-        return boo;
-    }
-    while (n % x != 0) {
-        ++x;
-        if ((n - 1) == x) {
-            boo = true;
-        }
-    } return boo;
-}
-
-int main () {
-    int n;
-    int p = 2;
-    cout << "Enter number: ";
-    cin >> n;
-    while (n > p) {
-        if (prime(p)) {
-            if (n % p == 0) {
-                n = n / p;
-                cout << p << endl;;
-            } ++p;
-        } ++p;
-    } cout << n;
-    return 0;
-}
+def prime(n):
+	x = 2
+	boo = False
+	if (n == 2):
+		boo = True
+		return boo
+	while (n % x != 0):
+		x += 1
+		if ((n - 1) == x):
+			boo = True
+	return boo
+	
+def main():
+	p = 2
+	n = input("Enter a number: ")
+	while (n > p):
+		if (prime(p)):
+			if (n % p == 0):
+				n = n / p
+				print p
+			p += 1
+		p += 1
+	print n
+	
+main()
