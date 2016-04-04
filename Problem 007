@@ -10,27 +10,26 @@
 //Unsolved
 
 #include <iostream>
-#include <string>
-#include <sstream>
 
 using namespace std;
 
-int prime(int number) {
-    int counter = 1;
-    int prime = 3;
-    int div = 2;
-    while (number != counter) {
-        while ((prime % div != 0) && (prime > div)) {
-            if ((prime - 1) == div) {
-                counter++;
-                prime++;
-                div = 2;
-            } else {
-                div++;
+
+int prime(int const n) {
+    int p_counter, x, check = 0;
+    int p = 3;
+    while (n != p_counter) {
+        for (x = 2; x <= p / 2; ++x) {
+            if (p % x == 0) {
+                check = 1;
+                break;
             }
-        } prime++;
-        div = 2;
-    } return prime;;
+        } if (check == 0) {
+            ++p_counter;
+            p += 2;
+        } else {
+            p += 2;
+        }
+    } return p;
 }
 
 int main () {
@@ -38,44 +37,5 @@ int main () {
     cout << "Select the nth prime number: ";
     cin >> number;
     cout << prime(number);
-    return 0;
-}
-
-
-
-
-
-
-
-#include <iostream>
-#include <string>
-#include <sstream>
-
-using namespace std;
-
-
-int prime(int const n) {
-    int p_counter = 0;
-    int x, p = 2;
-    if (p == 2) {
-        ++p;
-        ++p_counter;
-    }
-    while (p_counter != n) {
-        while (p % x != 0) {
-            ++x;
-            if ((p - 1) == x) {
-                ++p_counter;
-                ++p;
-            }
-        } ++p;
-    } return p;
-}
-
-int main () {
-    int n;
-    cout << "Enter number: ";
-    cin >> n;
-    cout << prime(n) << endl;
     return 0;
 }
