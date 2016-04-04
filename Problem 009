@@ -9,8 +9,8 @@
 //Pythagorean triplet
 //Unsolved
 
-
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -18,10 +18,21 @@ int main () {
     int a = 1;
     int b = 2;
     int c = 3;
+    int n;
     while (a + b + c != 1000) {
         if (sqrt((a * a) + (b * b)) == c) {
+            n = a * b * c;
             //Pythagorean Triple!
+        } else {
+            if ((b - 1) == a) {
+                if ((c - 1) == b) {
+                    ++c;
+                } else {
+                    ++b;
+                }
+            } else {
+                ++a;
+            }
         }
-    } cout << (a * b * c);
-    
+    } cout << n;
 }
