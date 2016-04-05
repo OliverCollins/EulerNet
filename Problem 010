@@ -1,9 +1,35 @@
 //Programmer:    Oliver Collins
-//Date:          April 2nd, 2016
+//Date:          April 5th, 2016
 
 */
 ----------------------------------
 /*
 
 //Summation of Primes
-//Solved
+//Unsolved
+
+
+#include <iostream>
+
+using namespace std;
+
+int prime(int const n) {
+    int p = 3, p_add = 2, x = 2;
+    while (n > p) {
+        while ((p - 1) != x) {
+            if (p % x != 0) {
+                ++x;
+            } else {
+                ++p;
+                x = 2;
+            }
+        } p_add += p;
+    }
+}
+
+int main() {
+    int n;
+    cout << "Select a number: ";
+    cin >> n;
+    cout << prime(n);
+}
