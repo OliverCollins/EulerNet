@@ -17,14 +17,16 @@ int prime(int const n) {
     int p = 3, p_add = 2, x = 2;
     while (n > p) {
         while ((p - 1) != x) {
-            if (p % x != 0) {
+            if ((p % x != 0) && (p % 3 != 0)) {
                 ++x;
             } else {
-                ++p;
+                p += 2;
                 x = 2;
             }
         } p_add += p;
-    }
+        ++p;
+        x = 2;
+    } return p_add;
 }
 
 int main() {
