@@ -13,15 +13,13 @@
 
 using namespace std;
 
-
 int prime(int const n) {
-    int p_counter, x, check = 0;
-    int p = 3;
+    int p_counter = 0, x = 0, p = 3, check = 0;
     while (n != p_counter) {
         for (x = 2; x <= p / 2; ++x) {
             if (p % x == 0) {
-                check = 1;
                 break;
+                check = 1;
             }
         } if (check == 0) {
             ++p_counter;
