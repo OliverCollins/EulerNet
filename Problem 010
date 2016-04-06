@@ -8,13 +8,12 @@
 //Summation of Primes
 //Unsolved
 
-
 #include <iostream>
 
 using namespace std;
 
 int prime(int const n) {
-    int p_count = 2, x, p = 3;
+    long long p_count = 2, p = 3, x;
     while (n > p) {
         for (x = 2; x <= p - 1; ++x) {
             if (p % x == 0) {
