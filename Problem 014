@@ -38,9 +38,18 @@ int collatz(int const n) {
                     }
                 } else if ((3 * x - 1) % 2 == 1) {
                     x = (3 * x - 1);
-                    path[i] = x;
+                    if (x == 1) {
+                        if (sizeof(path) > size_path) {
+                            current = path[0];
+                            std::memset (path, 0, sizeof(path));
+                        } else {
+                            std::memset (path, 0, sizeof(path));
+                        }
+                    } else {
+                        path[i] = x;
+                    }
                 }
-            } std::memset (path, 0, sizeof(path));
+            }
         } ++x;
     } return path[1];
 }
