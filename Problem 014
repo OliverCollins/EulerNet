@@ -14,19 +14,25 @@
 
 using namespace std;
 
-int prime(int const n) {
+int collatz(int const n) {
     int path[10000000] = {0};
     while (n < 1000000) {
         for (int i = 0; i < n; ++i) {
-            
+            if (n == 1) {
+                path[i] == 1; break;
+            } else {
+                if (n % 2 == 0) {
+                    
+                }
+            }
         }
-    }
+    } return path[i];
 }
 
 int main () {
     int number;
-    cout << "Select the nth prime number: ";
+    cout << "Size: ";
     cin >> number;
-    cout << prime(number);
+    cout << collatz(number);
     return 0;
 }
