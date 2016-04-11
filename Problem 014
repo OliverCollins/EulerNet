@@ -11,22 +11,38 @@
 
 
 #include <iostream>
+#include <stdio.h>
+#include <cstring>
 
 using namespace std;
 
 int collatz(int const n) {
+    int x = 1, size_path = 0, current;
     int path[10000000] = {0};
-    while (n < 1000000) {
+    while (x < 1000000) {
         for (int i = 0; i < n; ++i) {
-            if (n == 1) {
+            if (x == 1) {
                 path[i] == 1; break;
             } else {
-                if (n % 2 == 0) {
-                    
+                if (x % 2 == 0) {
+                    x /= 2;
+                    if (x == 1) {
+                        if (sizeof(path) > size_path) {
+                            current = path[0];
+                            std::memset (path, 0, sizeof(path));
+                        } else {
+                            std::memset (path, 0, sizeof(path));
+                        }
+                    } else {
+                        path[i] = x;
+                    }
+                } else if ((3 * x - 1) % 2 == 1) {
+                    x = (3 * x - 1);
+                    path[i] = x;
                 }
-            }
-        }
-    } return path[i];
+            } std::memset (path, 0, sizeof(path));
+        } ++x;
+    } return path[1];
 }
 
 int main () {
