@@ -8,3 +8,25 @@
 
 //Largeest Collatz sequence
 //Unsolved
+
+
+#include <iostream>
+
+using namespace std;
+
+int prime(int const n) {
+    int path[10000000] = {0};
+    while (n < 1000000) {
+        for (int i = 0; i < n; ++i) {
+            
+        }
+    }
+}
+
+int main () {
+    int number;
+    cout << "Select the nth prime number: ";
+    cin >> number;
+    cout << prime(number);
+    return 0;
+}
