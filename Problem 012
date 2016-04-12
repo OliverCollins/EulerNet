@@ -24,9 +24,14 @@ int triangle(int const t) {
 }
 
 int main () {
-    int t;
-    cout << "Size: ";
-    cin >> t;
-    cout << triangle(t);
+    int t = 1;
+    int fill_array[500] = {0};
+    while (fill_array[500] == 0) {
+        for (int i = 1; i < triangle(t); ++i) {
+            if (triangle(t) % i == 0) {
+                triangle(t) /= i;
+            }
+        }
+    }
     return 0;
 }
