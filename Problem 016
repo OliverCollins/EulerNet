@@ -1,3 +1,14 @@
+//Programmer:    Oliver Collins
+//Date:          April 25th, 2016
+//Language:      C++
+
+*/
+----------------------------------
+/*
+
+//Sum of digits
+//Unsolved
+
 #include <iostream>
 #include <stdio.h>
 #include <cstring>
