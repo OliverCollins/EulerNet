@@ -1,1 +1,22 @@
-//
+#include <iostream>
+#include <stdio.h>
+#include <cstring>
+
+using namespace std;
+
+int sum_of_digits(int const power) {
+    if (power % 4 == 1) {
+        //Last digit is 2
+    } else if (power % 4 == 2) {
+        //Last digit is 4
+    } else if (power % 4 == 3) {
+        //Last digit is 8
+    } else {
+        //Last digit is 6
+    }
+}
+
+int main () {
+
+    return 0;
+}
