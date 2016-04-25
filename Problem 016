@@ -15,6 +15,21 @@
 
 using namespace std;
 
+#include <iostream>
+#include <stdio.h>
+#include <cstring>
+#include <cmath>
+
+using namespace std;
+
+int length(int number) {
+    int counter = 0;
+    while (number) {
+        number /= 10;
+        ++counter;
+    } return (counter);
+}
+
 int sum_of_digits(int const power) {
     if (power % 4 == 1) {
         //Last digit is 2
@@ -24,6 +39,24 @@ int sum_of_digits(int const power) {
         //Last digit is 8
     } else {
         //Last digit is 6
+    }
+
+
+
+    if ((power / pow(10, length(power)) == 1) || power / pow(10, length(power)) == 8) {
+        //First digit is 2
+    } else if (power / pow(10, length(power)) == 2) {
+        //First digit is 4
+    } else if (power / pow(10, length(power)) == 3) {
+        //First digit is 8
+    } else if ((power / pow(10, length(power)) == 4) || power / pow(10, length(power)) == 7) {
+        //First digit is 1
+    } else if (power / pow(10, length(power)) == 5) {
+        //First digit is 3
+    } else if (power / pow(10, length(power)) == 6) {
+        //First digit is 6
+    } else {
+        //First digit is 9
     }
 }
 
