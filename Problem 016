@@ -12,12 +12,6 @@
 #include <iostream>
 #include <stdio.h>
 #include <cstring>
-
-using namespace std;
-
-#include <iostream>
-#include <stdio.h>
-#include <cstring>
 #include <cmath>
 
 using namespace std;
