@@ -1,1 +1,21 @@
-//
+#include <iostream>
+#include <stdio.h>
+#include <cstring>
+#include <cmath>
+
+using namespace std;
+
+bool leap(int const year) {
+    if (year % 4 == 0) {
+        return true;
+    } else { return false; }
+}
+
+int main () {
+    int counter = 0;
+    int year = 1900;
+    if (leap(year)) {
+        
+    }
+    return 0;
+}
