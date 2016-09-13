@@ -1,6 +1,6 @@
 //Programmer:    Oliver Collins
-//Date:          March 27th, 2016
-//Language:      C++
+//Date:          September 12th, 2016
+//Language:      C
 
 */
 ----------------------------------
@@ -9,31 +9,25 @@
 //Large Prime Numbers
 //Unsolved
 
-#include <iostream>
+#include <stdio.h>
 
-using namespace std;
-
-int prime(int const n) {
-    int p_counter = 0, x = 0, p = 3, check = 0;
-    while (n != p_counter) {
-        for (x = 2; x <= p / 2; ++x) {
-            if (p % x == 0) {
-                break;
-                check = 1;
-            }
-        } if (check == 0) {
-            ++p_counter;
-            p += 2;
-        } else {
-            p += 2;
-        }
-    } return p;
+int prime(int x) {
+	bool flag = true;
+	for (int i = 2; i < x; i++) {
+		if (x / i == 0) {
+			flag = false;
+			break;
+		}
+	}
+	return flag;	
 }
 
-int main () {
-    int number;
-    cout << "Select the nth prime number: ";
-    cin >> number;
-    cout << prime(number);
-    return 0;
+int main(void) {
+	unsigned int x = 1;
+	for (int i = 1; i <= 10001; i++) {
+		if (flag) {
+			print("%d\n", x);
+		}
+	}
+	return 0;
 }
