@@ -17,9 +17,11 @@ typedef int bool;
 int prime(int x) {
 	bool flag = true;
 	for (int i = 2; i < x; i++) {
-		if (x / i == 0) {
+		if (x % i == 0) {
 			flag = false;
 			break;
+		} else {
+			
 		}
 	}
 	return flag;	
