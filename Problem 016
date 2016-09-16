@@ -11,10 +11,9 @@
 
 #include <stdio.h>
 
+
 int main(void) {
 	unsigned int x = 1 << 1000; //2^1000
-	char str[15];
-	sprintf(str, "%d", x);
-	//unsigned int size = sizeof 
+	printf("%d", x);
 	return 0;
 }
