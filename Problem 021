@@ -28,7 +28,7 @@ int amicable(int x) {
 			a[count] = i;
 			count++;
 		} 
-	}
+	} sum_array(a[], x);
 }
 
 int main(void) {
