@@ -1,3 +1,15 @@
+//Programmer:    Oliver Collins
+//Date:          September 21st, 2016
+//Language:      C
+
+*/
+----------------------------------
+/*
+
+//Amicable Numbers
+//Unsolved
+
+
 #include <stdio.h>
 
 int amicable(int x) {
