@@ -13,6 +13,7 @@
 
 
 int main(void) {
+	int nDigits = floor(log10(abs(the_integer))) + 1;
 	unsigned int x = 1 << 1000; //2^1000
 	printf("%d", x);
 	return 0;
