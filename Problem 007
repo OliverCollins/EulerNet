@@ -27,4 +27,4 @@ while (arr_length < 10000) {
 	}
 }
 
-// your code goes here
+console.log(arr(arr_length - 1));
