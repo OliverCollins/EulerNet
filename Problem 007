@@ -1,6 +1,6 @@
 //Programmer:    Oliver Collins
-//Date:          September 12th, 2016
-//Language:      C
+//Date:          February 16th, 2017
+//Language:      Javascript
 
 */
 ----------------------------------
@@ -9,36 +9,13 @@
 //Large Prime Numbers
 //Unsolved
 
-#include <stdio.h>
-typedef int bool;
-#define true 1
-#define false 0
+importPackage(java.io);
+importPackage(java.lang);
 
-int prime(int x) {
-	bool flag = true;
-	for (int i = 2; i < x; i++) {
-		if (x % i == 0) {
-			flag = false;
-			break;
-		} else {
-			
-		}
-	}
-	return flag;	
-}
-
-int main(void) {
-	unsigned int x = 3;
-	for (int i = 1; i <= 10002; i++) {
-		if (prime(x)) {
-			if (i == 10002) {
-				printf("%d", x);
-			} else {
-				x++;
-			}
-		} else {
-			x++;
-		}
-	}
-	return 0;
+var prime = 3;
+for (var i = 2; i < prime; i++) {
+	if (prime % i == 0) { 	//Not a prime
+		prime += 1; 		//Try next number up
+		break; 				//Break out of for loop
+	} 
 }
