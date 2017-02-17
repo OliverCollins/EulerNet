@@ -12,10 +12,19 @@
 importPackage(java.io);
 importPackage(java.lang);
 
+var arr = new Array();
 var prime = 3;
-for (var i = 2; i < prime; i++) {
-	if (prime % i == 0) { 	//Not a prime
-		prime += 1; 		//Try next number up
-		break; 				//Break out of for loop
-	} 
+var arr_length = 0;
+while (arr_length < 10000) {
+	for (var i = 2; i < prime; i++) {
+		if (prime % i === 0) {
+			prime++;
+		} else if (prime === i - 1) {
+			arr(arr_length) = prime;
+			arr_length++;
+			prime++;
+		}
+	}
 }
+
+// your code goes here
