@@ -5,9 +5,12 @@
 importPackage(java.io);
 importPackage(java.lang);
 
-var first_ten = "onetwothreefourfivesixseveneightnineten";
-var teen = "thirfourfifsixseveneighnine"
-var rest = "eleventwelvetwenty";
+var first_ten = ("onetwothreefourfivesixseveneightnine".length * 10); //Said exactly ten times
+var tens = ("tentwentythirtyfourtyfiftysixtyseventyeightyninety".length * 10); //Said exactly ten times
+var teen = ("thirteenfourteenfifteensixteenseventeeneighteennineteen".length * 10) //Said exactly ten times
+var rest = ("eleventwelvetwenty".length * 10); //Said exactly ten times each
+var hundreds = ("onehundredtwohundredthreehundredfourhundredfivehundredsixhundredsevenhundredeighthundredninehundred".length * 100); //Each hundred is said 100 times exactly
+var thousand = "onethousand"; //Only one case of 'thousand' so just created string
 
 
 //eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
@@ -25,4 +28,10 @@ var rest = "eleventwelvetwenty";
 //onehundred onehundredone onehundredtwo ... onehundrednine
 //onehundredten onehundredeleven ... onehundrednineteen
 
+//...
+
+// ninehundredninetynine onethousand
+
 var length = first_ten.length + teen.length + (7 * "teen") + rest.length;
+
+// your code goes here
