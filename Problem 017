@@ -2,15 +2,17 @@
 //Date:          February 22nd, 2017
 //Language:      Javascript
 
+
 importPackage(java.io);
 importPackage(java.lang);
 
-var first_ten = ("onetwothreefourfivesixseveneightnine".length * 10); //Said exactly ten times
-var tens = ("tentwentythirtyfourtyfiftysixtyseventyeightyninety".length * 10); //Said exactly ten times
-var teen = ("thirteenfourteenfifteensixteenseventeeneighteennineteen".length * 10) //Said exactly ten times
-var rest = ("eleventwelvetwenty".length * 10); //Said exactly ten times each
-var hundreds = ("onehundredtwohundredthreehundredfourhundredfivehundredsixhundredsevenhundredeighthundredninehundred".length * 100); //Each hundred is said 100 times exactly
-var thousand = "onethousand"; //Only one case of 'thousand' so just created string
+var first_ten  = ("onetwothreefourfivesixseveneightnine".length * 90);                                                                  //Said 9 * 10 times exclude 'teens'
+var tens       = ("ten".length * 10);                                                                                                   //Said exactly ten times
+var rest_tens  = ("twentythirtyfourtyfiftysixtyseventyeightyninety".length * 10);                                                       //Said 10 times exactly
+var teen       = ("thirteenfourteenfifteensixteenseventeeneighteennineteen".length * 10)                                                //Said exactly ten times
+var rest       = ("eleventwelvetwenty".length * 10);                                                                                    //Said exactly ten times each
+var hundreds   = ("onehundredtwohundredthreehundredfourhundredfivehundredsixhundredsevenhundredeighthundredninehundred".length * 100);  //Each hundred is said 100 times exactly
+var thousand   = "onethousand".length; //Only one case of 'thousand' so just created string
 
 
 //eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
@@ -32,6 +34,6 @@ var thousand = "onethousand"; //Only one case of 'thousand' so just created stri
 
 // ninehundredninetynine onethousand
 
-var length = first_ten.length + teen.length + (7 * "teen") + rest.length;
+var final_length = first_ten + tens + res_tens + teen + rest + hundreds + thousand;
 
-// your code goes here
+console.log(final_length);
