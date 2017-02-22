@@ -1,7 +1,28 @@
 //Programmer:    Oliver Collins
-//Date:          April 22nd, 2016
-//Language:      C++
+//Date:          February 22nd, 2017
+//Language:      Javascript
 
-*/
-----------------------------------
-/*
+importPackage(java.io);
+importPackage(java.lang);
+
+var first_ten = "onetwothreefourfivesixseveneightnineten";
+var teen = "thirfourfifsixseveneighnine"
+var rest = "eleventwelvetwenty";
+
+
+//eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
+//eleven twelve twenty don't end with "teen"
+
+//twenty twentyone twentytwo twentythree twentyfour twentyfive twentysix twentyseven twentyeight twentynine
+//thirty thirtyone thirtytwo thirtythree thirtyfour thirtyfive thirtysix thirtyseven thirtyeight thirynine
+//fourty fourtyone ...																		 ... fourtynine
+//fifty
+//...
+//
+//
+//nintey ninteyone ...																		 ... ninetynine
+
+//onehundred onehundredone onehundredtwo ... onehundrednine
+//onehundredten onehundredeleven ... onehundrednineteen
+
+var length = first_ten.length + teen.length + (7 * "teen") + rest.length;
