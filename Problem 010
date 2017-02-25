@@ -1,34 +1,36 @@
 //Programmer:    Oliver Collins
-//Date:          April 5th, 2016
-//Language:      C++
+//Date:          February 24th, 2017
+//Language:      Javascript
 
 */
 ----------------------------------
 /*
 
-//Summation of Primes
+//Large Prime Numbers
 //Unsolved
 
-#include <iostream>
+importPackage(java.io);
+importPackage(java.lang);
 
-using namespace std;
-
-int prime(int const n) {
-    long long p_count = 2, p = 3, x;
-    while (n > p) {
-        for (x = 2; x <= p - 1; ++x) {
-            if (p % x == 0) {
-                break;
-            }
-        } if (p == x) {
-            p_count += p;
-        } ++p;
-    } return p_count;
+var arr = new Array();
+var prime = 3;
+var arr_length = 0;
+while (prime < 2000000) {
+	for (var i = 2; i < prime; i++) {
+		if (prime % i === 0) {
+			prime++;
+		} else if (prime === i - 1) {
+			arr(arr_length) = prime;
+			arr_length++;
+			prime++;
+		}
+	}
 }
 
-int main() {
-    int n;
-    cout << "Select a number: ";
-    cin >> n;
-    cout << prime(n);
+var add_primes = 0;
+
+for (var x = 0; x < arr.length(); x++) {
+    add_primes += arr(x);
 }
+
+console.log(add_primes);
