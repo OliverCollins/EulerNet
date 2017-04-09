@@ -1,6 +1,6 @@
 //Programmer:    Oliver Collins
-//Date:          April 29th, 2016
-//Language:      C++
+//Date:          April 9th, 2017
+//Language:      Javascript
 
 */
 ----------------------------------
@@ -117,4 +117,3 @@ for (var i = 0; i < String_number.length; i += 50) {
 }
 
 console.log(output);
-
