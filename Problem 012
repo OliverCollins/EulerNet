@@ -29,7 +29,7 @@ int main () {
     while (fill_array[500] == 0) {
         for (int i = 1; i < triangle(t); ++i) {
             if (triangle(t) % i == 0) {
-                triangle(t) /= i;
+                triangle(t) == triangle(t) / i;
             }
         }
     }
