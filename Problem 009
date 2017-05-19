@@ -9,30 +9,29 @@
 //Pythagorean triplet
 //Unsolved
 
-#include <iostream>
-#include <cmath>
+function main() {
+	var a = 1;
+	var b = 2;
+	var c = 3;
+	var n = 0;
 
-using namespace std;
+	console.log("hello");
 
-int main () {
-    int a = 1;
-    int b = 2;
-    int c = 3;
-    int n;
-    while (a + b + c != 1000) {
-        if (sqrt((a * a) + (b * b)) == c) {
-            n = a * b * c;
-            //Pythagorean Triple!
-        } else {
-            if ((b - 1) == a) {
-                if ((c - 1) == b) {
-                    ++c;
-                } else {
-                    ++b;
-                }
-            } else {
-                ++a;
-            }
-        }
-    } cout << n;
+	while (a + b + c < 1000) {
+		if (Math.sqrt((a * a) + (b * b)) === c) {
+			n = a * b * c; // Pi Trip!
+		} else {
+			if ((b - 1) === a) {
+				if ((c - 1) === b) {
+					c++;
+				} else {
+					b++
+				}
+			} else {
+				a++;	
+			}
+		}
+	}
+
+	console.log(n);
 }
