@@ -1,6 +1,6 @@
 //Programmer:    Oliver Collins
-//Date:          September 16th, 2016
-//Language:      C
+//Date:          May 10th, 2018
+//Language:      Python
 
 */
 ----------------------------------
@@ -9,14 +9,7 @@
 //Sum of digits
 //Unsolved
 
-#include <stdio.h>
-#include <math.h>
-
-
-int main(void) {
-	unsigned int x = 1 << 1000; //2^1000
-	int nDigits = floor(log10(abs(x))) + 1; // length of digit
-	int arr[nDigits];
-	printf("%d", x);
-	return 0;
-}
+sum_, num = 0, list(str(2**1000))
+for x in range(len(num)):
+	sum_ += int(num[x])
+print(sum_)
