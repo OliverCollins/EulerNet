@@ -17,6 +17,8 @@ def check_odd_digits(num):
 	return 1
 
 sum_ = 0
-for x in range(10, 100000000):
-	sum_ += check_odd_digits(x + int(str(x)[::-1]))
+for x in range(10, 10000000):
+	temp = (x + int(str(x)[::-1]))
+	if temp % 2 == 0:
+		sum_ += check_odd_digits(temp)
 print(sum_)
