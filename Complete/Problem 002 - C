@@ -1,42 +1,19 @@
-//Programmer:    Oliver Collins
-//Date:          March 20th, 2016
-//Language:      C++
+# Programmer:    Oliver Collins
+# Date:          May 15th, 2018
+# Language:      Python
 
-*/
+'''
 ----------------------------------
-/*
+'''
 
-//Sum of even fibonacci numbers
-//Solved
+# Sum of even fibonacci numbers
+# Solved
 
-#include <iostream>
-using namespace std;
-
-int fibonacci(int nth_term) {
-    if (nth_term == 1) {
-        return nth_term;
-    } else {
-        int add = 0;
-        int counter = 1;
-        int current = 1;
-        int prev = 1;
-        int next = 1;
-        while (counter != nth_term && current < 4000000) {
-            next = current + prev;
-            counter++;
-            prev = next - prev;
-            current = next;
-            if (current % 2 == 0) {
-                add = add + current;
-            }
-        }
-        return add;
-    }
-}
-
-int main () {
-    int number;
-    cout << "Number: ";
-    cin >> number;
-    cout << fibonacci(number);
-}
+n_1, n, sum_ = 1, 1, 0
+while (n_1 < 4000000):
+	add = n_1 + n
+	if (add % 2 == 0):
+		sum_ += add
+	temp, n = n, n_1
+	n_1 += temp
+print(sum_)
