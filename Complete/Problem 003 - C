@@ -1,17 +1,16 @@
-//Programmer:    Oliver Collins
-//Date:          April 1st, 2016
-//Language:      Python
+# Programmer:    Oliver Collins
+# Date:          April 1st, 2016
+# Language:      Python
 
-*/
+'''
 ----------------------------------
-/*
+'''
 
-//Largest prime factor
-//Solved
+# Largest prime factor
+# Solved
 
 def prime(n):
-	x = 2
-	boo = False
+	x, boo = 2,  False
 	if (n == 2):
 		boo = True
 		return boo
