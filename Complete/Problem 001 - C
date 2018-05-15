@@ -1,38 +1,17 @@
-//Programmer:    Oliver Collins
-//Date:          March 19th, 2016
-//Language:      C++
+# Programmer:    Oliver Collins
+# Date:          May 15th, 2018
+# Language:      Python
 
-*/
+'''
 ----------------------------------
-/*
+'''
 
-//Sum of multiples of 3
-//Solved
+# Sum of multiples of 3
+# Solved
 
-#include <iostream>
-using namespace std;
-
-int main () {
-    int number;
-    int three = 3;
-    int five = 5;
-    cout << "Number: ";
-    cin >> number;
-    int counter = 0;
-    while (number > three) {
-        if (three % 5 == 0) {
-            counter = counter + three;
-            three = three + 3;
-        } else {
-            counter = counter + three;
-            three = three + 3;
-        }
-    } while (number > five) {
-        if (five % 3 == 0) {
-            five = five + 5;
-        } else {
-            counter = counter + five;
-            five = five + 5;
-        }
-    } cout << counter;
-}
+n, sum_ = 3, 0
+while (n != 1000):
+	if (n % 3 == 0 or n % 5 == 0):
+		sum_ += n
+	n += 1
+print(sum_)
