@@ -1,10 +1,9 @@
 # EulerNet
 Project on answering all puzzles on projecteurler.net
 
-#### Problems Completed: 6
+#### Problems Completed: 16
 
 Languages Used:
-
-                    C++:         4
-                    Python:      4
-                    Javascript:  1
+                    
+                    Python:      15
+                    C++:         1
