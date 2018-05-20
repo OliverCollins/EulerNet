@@ -5,5 +5,5 @@ Project on answering all puzzles on projecteurler.net
 
 Languages Used:
                     
-                    Python:      15
-                    C++:         1
+                    Python:      14
+                    C++:         2
