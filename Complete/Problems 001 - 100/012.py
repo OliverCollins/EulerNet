@@ -7,7 +7,7 @@
 '''
 
 # Highly Divisible Triangular Numbers
-# Unsolved
+# Solved
 
 import math
 
