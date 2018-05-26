@@ -15,10 +15,10 @@ sum_, num = 0, 37107287533902102798797998220837590246510135740250463769376774900
 for x in range(100):
 
 	# Get 50 digits, add them to sum, and iterate
-	l = list(map(int, list(str(num)[(x * 50):((x + 1) * 50)])))
+	row = list(map(int, list(str(num)[(x * 50):((x + 1) * 50)])))
 	n = ""
-	for x in range(len(l)):
-		n += str(l[x])
+	for x in range(len(row)):
+		n += str(row[x])
 	sum_ += int(n)
 
 # Print first 10 digits of sum
