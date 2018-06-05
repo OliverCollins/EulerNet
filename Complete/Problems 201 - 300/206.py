@@ -6,7 +6,7 @@
 ----------------------------------
 '''
 
-# Largest Palidrome Product
+# Concealed Square
 # Solved
 
 import math
