@@ -6,8 +6,8 @@
 -- -- -- -- -- -- -- -- -- -- --
 '''
 
-#How many reversible numbers are there below one-billion?
-#Solved
+# How many reversible numbers are there below one-billion?
+# Solved
 
 def check_odd_digits(num):
 	str_num = str(num)
