@@ -6,11 +6,11 @@
 ----------------------------------
 '''
 
-# Sum of multiples of 3
+# Multiples of 3 and 5
 # Solved
 
 n, sum_ = 3, 0
-while (n != 1000):
+while n != 1000:
 	if (n % 3 == 0 or n % 5 == 0):
 		sum_ += n
 	n += 1
