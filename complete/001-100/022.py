@@ -1,4 +1,13 @@
+# Programmer:    Oliver Collins
+# Date:          December 28th, 2018
+# Language:      Python
 
+'''
+----------------------------------
+'''
+
+# Names scores
+# Solved
 
 def get_name_value(name):
 	val = 0
